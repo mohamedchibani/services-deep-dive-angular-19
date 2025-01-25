@@ -2,9 +2,9 @@ import { LoggingService } from './../logging.service';
 import { Task, TaskStatus } from './task.model';
 import { inject, Injectable, signal } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root',
-})
+// @Injectable({
+//   providedIn: 'root',
+// })
 export class TasksService {
   private tasks = signal<Task[]>([]);
   private loggingService = inject(LoggingService);
