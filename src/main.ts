@@ -8,6 +8,7 @@ import { InjectionToken } from '@angular/core';
 export const TasksServiceToken = new InjectionToken<TasksService>(
   'tasks-service-token'
 );
+
 bootstrapApplication(AppComponent, {
   providers: [{ provide: TasksServiceToken, useClass: TasksService }],
 }).catch((err) => console.error(err));
